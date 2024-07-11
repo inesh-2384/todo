@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo List</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background-color: burlywood;
+    }
+    input[type="text"] {
+      padding: 10px;
+      width: 200px;
+      margin-right: 10px;
+    }
+    button {
+      padding: 10px;
+      cursor: pointer;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    li {
+      margin-bottom: 5px;
+    }
+
+    .button{
+      border-radius: 40px;
+      border: none;
+
+    }
+    .inputt{
+      margin-bottom: 48px;
+      border-radius: 35px;
+      border: navajowhite;
+      border: none;
+    }
+
+    .todoo{
+      font-size: large;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-weight: bolder;
+      padding-left: 300px;
+    }
+
+     /* Reset default margin and padding */
+body, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Style for tasks list */
+.tasks {
+  list-style-type: none; /* Remove default list style */
+  padding: 0; /* Remove any default padding */
+}
+
+/* Alternating background colors for list items */
+.tasks li:nth-child(even) {
+  background-color: #f2f2f2; 
+}
+
+.tasks li:nth-child(odd) {
+  background-color: #ffffff; 
+}
+
+/* Style for each task item */
+.tasks li {
+  display: flex; 
+  align-items: center; 
+  padding: 10px; 
+  margin-bottom: 12px; 
+  border-radius: 5px; 
+}
+
+/* Style for buttons within tasks list */
+.tasks li button {
+  margin-left: 10px; 
+  padding: 5px 10px; 
+  background-color: #f44336; 
+  color: white; 
+  border: none; 
+  cursor: pointer;
+}
+
+.edit-btn {
+  background-color: #4caf50; 
+  margin-right: 4px;
+}
+.delAll {
+  background-color: #000000;
+  color: #f2f2f2;
+  margin-top: 30px;
+}
+
+  </style>
+</head>
+<body>
+  <div id="container">
+    <p class="todoo">ToDo List</p>
+    <input class="inputt" type="text" />
+    <button class="button">Add Task</button>
+    <ul class="tasks"></ul>
+    <button class="delAll">Delete_All_Todos</button>
+  </div>
+
+  <script src="todo.js"></script>
+  <script src="server.js"></script>
+</body>
+</html>
